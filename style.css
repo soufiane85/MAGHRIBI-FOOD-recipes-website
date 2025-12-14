@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; /* stop sideways scroll */
+    background: black;  /* fallback if something leaks */
+    font-family:Arial, Helvetica, sans-serif, serif;
+}
+
+.main .logo{
+    color: #e65c00;
+    margin-top: 20px;
+}
+.main-homepage .logo {
+    color: #e65c00;
+    margin-top: 20px;
+}
+
+
+
+/* ---------- MAIN SECTION ---------- */
+.main-homepage {
+    height:auto;
+    width:100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url("Bl-what-to-eat-marrakech-TI.jpg");
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding-bottom: 50px; /* spacing at bottom so content doesn’t touch edge */
+}
+
+.main {
+    height:100%;
+    width:100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url("Bl-what-to-eat-marrakech-TI.jpg");
+    background-position: center center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    padding-bottom: 50px; /* spacing at bottom so content doesn’t touch edge */
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon {
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+
+.menu {
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: #ff7200;
+}
+
+/* ---------- SEARCH BAR ---------- */
+.search {
+    display: flex;
+    width: 330px;
+    float: left;
+    margin-left: 270px;
+}
+
+.srch {
+    font-family:Arial, Helvetica, sans-serif;
+    background: transparent;
+    width: 200px;
+    height: 40px;
+    border: 1px solid #ff7200;
+    margin-top: 13px;
+    border-right: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.srch:focus {
+    outline: none;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    background: #ff7200;
+    border: 2px solid #ff7200;
+    margin-top: 13px;
+    color: white;
+    font-size: 15px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none; 
+}
+
+.btn:hover {
+    background: #e65c00; /* darker orange on hover */
+}
+
+/* ---------- CONTENT ---------- */
+.content {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    color: white;
+    position: relative;
+}
+
+.content .par {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    padding-left: 20px; 
+    padding-top: 9%;
+    letter-spacing: 2px;
+}
+
+.content h1 span {
+    color: #e65c00;
+}
+
+.content .cn {
+    padding: 15px 40px;
+    border: none;
+    background: #e65c00;
+    font-size: 18px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.content .cn a {
+    text-decoration: none;
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;
+    transition: .3s ease;
+}
+
+.cn:hover {
+    background-color: white;
+}
+
+/* ---------- TITLES & TAGS ---------- */
+.tag, .prous, .procip {
+    color: white;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.prous {
+    margin-top: 130px;
+}
+
+.email_contact {
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    position: relative;
+    margin: auto;
+}
+
+/* ---------- ITEMS GRID ---------- */
+.items {
+    background: transparent;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    justify-items: center;
+    gap: 20px;              
+    margin-top: 30px;
+}
+
+.item img {
+    padding: 0;
+    max-width: 300px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8);
+}
+
+.item p {
+    color: white;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+/* ---------- RECIPE IMAGE & BOX ---------- */
+.recipe {
+    color: white;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+
+.recipe img {
+    padding: 0;
+    max-width: 800px;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8);
+    margin: 20px auto;
+    display: block;
+}
+
+
+.recipe {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-family:Arial, Helvetica, sans-serif, serif;
+    line-height: 1.8;
+  }
+  
+  .recipe h1 {
+    font-size: 42px;
+    color: #ff7200;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .recipe img {
+    display: block;
+    max-width: 100%;
+    border-radius: 15px;
+    margin: 20px auto;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.7);
+  }
+  
+  .recipe h2 {
+    font-size: 28px;
+    margin-top: 30px;
+    color: #e65c00;
+    border-bottom: 2px solid #ff7200;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  .recipe ul, 
+  .recipe ol {
+    margin: 20px 40px;
+    text-align: left;
+  }
+  
+  .recipe ul li,
+  .recipe ol li {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .recipe ol li ul {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style-type: circle;
+  }
+  
+  .recipe ol li ul li {
+    font-size: 16px;
+  }
+  
+  
